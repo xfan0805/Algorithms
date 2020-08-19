@@ -63,7 +63,30 @@ public class ArrayTest {
         System.out.println(s2==s3); //true
         System.out.println(s1==s3); //false
 
-        new Counter("dd");
+        Counter cc = new Counter("dd");
+        cc.increment();
+        System.out.println(cc);
+        Counter dd;
+        dd = cc;
+        dd.increment();
+
+        System.out.println(dd);
+
+        int aa = 1;
+        int bb = aa;
+        bb = bb + 22;
+        System.out.println(bb);
+        System.out.println(aa);
+
+        String ss = "ss";
+        String sss = ss;
+        sss = sss + "sds";
+        System.out.println(ss);
+        System.out.println(sss);
+
+
+        ArrayTest aaa = new ArrayTest();
+        System.out.println(aaa.ArrayTest());
 
     }
 
@@ -81,6 +104,10 @@ public class ArrayTest {
         n = n + 2000;
     }
 
+    public String ArrayTest(){
+        return "gg";
+    }
 
-
+    public ArrayTest() {
+    }
 }
