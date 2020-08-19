@@ -1,7 +1,7 @@
 package Chapter01;
 
 import java.util.Arrays;
-
+import edu.princeton.cs.algs4.*;
 /**
  * @program: Algorithms
  * @description:
@@ -62,6 +62,8 @@ public class ArrayTest {
         System.out.println(s1==s2); //false
         System.out.println(s2==s3); //true
         System.out.println(s1==s3); //false
+
+        new Counter("dd");
 
     }
 
